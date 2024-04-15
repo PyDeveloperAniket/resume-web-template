@@ -1,0 +1,227 @@
+/* Global styles */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex; /* Add flex display to the body */
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left section styles */
+.left-half {
+  background-color: red;
+  height: 130vh;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border: 5px solid black;
+}
+
+.name-overlay {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.name-overlay:hover{
+  cursor: pointer;
+}
+
+
+.left-icon {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+p {
+  max-width: 180px; /* Set maximum width */
+  margin-left: 10px;
+  overflow-wrap: break-word; /* Wrap long words */
+}
+
+.horizontal-line {
+  border-top: 3px solid #000000; /* Adjust color, thickness, and style */
+  width: 225px; /* Adjust width as needed */
+  margin: 0 auto; /* Adjust margins for spacing */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info a {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.info small {
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+/* Right section styles */
+.container-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Work experience section */
+.work-experience {
+  float: left;
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  height: 300px;
+  width: 850px;
+  margin: 15px 15px 15px 15px;
+  box-sizing: border-box;
+}
+
+.right-icon {
+  float: left;
+  background-color: #ff0000;
+  height: 40vh;
+  width: 50px;
+  margin: 25px 30px 100% 30px;
+  box-sizing: border-box;
+}
+
+.job-container {
+  float: left;
+  border: solid;
+  border-width: 0px 0px 3px 0px;
+  box-sizing: border-box;
+  margin: 0px 10px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  width: 200px;
+  height: auto;
+}
+
+.job-container:hover {
+  background-color: rgb(189, 188, 188);
+  cursor: pointer;
+}
+
+.job-title {
+  font-weight: bold;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.job-date {
+  color: #b30000;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.job-desc {
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Education section */
+.education {
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 850px;
+  margin: 15px 15px 15px 15px;
+}
+
+.education i {
+  margin: 3px auto;
+}
+
+/* Skill Section */
+.skills {
+  box-shadow: 10px 10px 5px grey;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 410px;
+  margin: 15px 15px 15px 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 10px 20px 20px 45px;
+}
+
+/* Styling for each skill */
+li.skill1 {
+  border: solid;
+  border-width: 1px;
+  background-color: #ff0303;
+  margin: 10px 110px 10px 0px;
+  border: none;
+}
+
+li.skill2 {
+  border: solid;
+  border-width: 1px;
+  background-color: #ff0000;
+  margin: 10px 130px 10px 0px;
+  border: none;
+}
+
+li.skill3 {
+  border: solid;
+  border-width: 1px;
+  background-color: #ff0000;
+  margin: 10px 0px 10px 0px;
+  border: none;
+}
+
+li.skill4 {
+  border: solid;
+  border-width: 1px;
+  background-color: #ff0000;
+  margin: 10px 90px 10px 0px;
+  padding: 0px 101px 0px 0px;
+  border: none;
+}
+
+/* Interest section */
+.interest {
+  box-shadow: 10px 10px 5px gray;
+  margin: 15px 15px 15px 15px;
+  background-color: white;
+  box-sizing: border-box;
+  height: 300px;
+  width: 410px;
+}
+
+.skills,
+.interest {
+  flex-wrap: wrap;
+  flex-basis: calc(50% - 20px); /* Set width of each section to half the container width */
+  margin-right: 20px; /* Adjust spacing between sections */
+  margin-bottom: 20px; /* Adjust spacing between rows */
+}
